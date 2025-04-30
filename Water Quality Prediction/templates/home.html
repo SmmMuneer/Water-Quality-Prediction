@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Quality Prediction</title>
+    <style>
+        body {
+            background-image: url("C:\Users\Dell1\Desktop\1\templates\Water-Background-Wallpaper-14617.jpg");
+            height: 100vh;
+            background-size: cover;
+            text-align: center;
+            padding-top: 100px;
+        }
+        h1 {
+            color: rgb(14, 1, 1);
+            font-size: 36px;
+        }
+        input[type="number"] {
+            width: 200px;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #021f3d;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Water Quality Prediction</h1>
+
+        <form method="POST" action="{{ url_for('home')}}">
+            <input type="number" name="1" placeholder="PH" required><br>
+            <input type="number" name="2" placeholder="Hardness" required><br>
+            <input type="number" name="3" placeholder="Solids" required><br>
+            <input type="number" name="4" placeholder="Chloramines" required><br>
+            <input type="number" name="5" placeholder="Sulfate" required><br>
+            <input type="number" name="6" placeholder="Conductivity" required><br>
+            <input type="number" name="7" placeholder="Organic_Carbon" required><br>
+            <input type="number" name="8" placeholder="Trihalomethanes" required><br>
+            <input type="number" name="9" placeholder="Turbidity" required><br>
+        <input type="submit"></button>
+    </form>
+</body>
+</html>

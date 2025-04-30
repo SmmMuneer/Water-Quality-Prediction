@@ -1,0 +1,66 @@
+<html>
+<head>
+    
+    <title>Safe Water</title>
+<style type="text/css">
+
+    body{
+        background-image: url("C:\Users\Dell1\Desktop\1\templates\Dark-Blue-Background-Abstract-Texture-Image.jpg");
+        background-color: rgb(173, 216, 230);
+    }
+    .safe{
+        color: green;
+        font-size: 100;
+        padding: 0px;
+        margin: 0px
+    }
+    h1{
+        font-size: 50
+    }
+    h1.prediction{
+        padding-top: 50px;
+        font-size: 120;
+    }
+    .safefrom{
+        font-size: 50px;
+        color: white;
+    }
+    .warn{
+        color: red;
+        font-size: 100px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .risk{
+        font-size: 30px;
+        color: white;
+    }
+
+</style>
+
+</head>
+<body bgcolor=#a3cfb4>
+
+    <center>
+
+        <h1 class="prediction">  PREDICTION :  </h1>
+    
+    {%if data == 1%}
+    <h1 class="safe">SAFE</h1>
+    <h1 class="safefrom">"Water is safe"</h1>  
+     
+
+    {%else%}
+    <h1 class="warn">"WARNING"</h1><h1 class="risk">Water is not pure</h1>
+    
+    
+    {%endif%}
+
+        <br><br>
+    <a href='/'>go back to home page</a>
+
+    </center>
+
+</body>
+
+</html>
